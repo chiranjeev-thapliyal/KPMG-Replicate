@@ -1,0 +1,300 @@
+
+/* -------------------------------------------Footer CSS Starts Here ----------------------------------------------------------*/
+
+.footer{
+    width: 100vw;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    z-index: 10;
+    position: absolute;
+}
+
+.footer__content{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10%; 
+}
+
+.footer__content > ul{
+    flex-shrink: 25%;
+}
+
+.footer .message{
+    border-bottom: 1px solid #d6d6d6;
+    padding: 17px 0 11px;
+}
+
+.footer .message li{
+    color: #888;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.33341;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.footer .menu{
+    line-height: 1.33341;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    visibility: visible;
+}
+
+.footer .menu .main{
+    flex-basis: 25%;
+    box-sizing: content-box;
+    display: block;
+    pointer-events: auto;
+    margin-bottom: .8em;
+    width: 100%;
+}
+
+.footer .main__heading{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.footer ul.menu li{
+    line-height: 1.33341;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: .8em;
+}
+
+.footer ul.menu li .submenu{
+    padding: 10px 0;
+    font-size: .8rem;
+}
+
+.footer ul.menu li ul li a{
+    font-size: .75rem;
+    color: #555;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer ul.menu li ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer .last__area{
+    font-size: .8rem;
+    font-family: inherit;
+    color: #888;
+}
+
+.footer .last__area li:first-child{
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.footer .last__area li:first-child a{
+    color: #0070c9;
+    display: contents;
+    font-size: inherit;
+    width: auto;
+    text-decoration: none;
+}
+
+.footer .last__area li:first-child a:hover{
+    text-decoration: underline;
+}
+
+.footer .country{
+    float: right;
+    margin-top: 5px;
+    position: relative;
+    top: -3px;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.footer .country > a{
+    font-size: .8rem;
+    font-family: inherit;
+    color: #888;
+}
+
+.footer__legal{
+    position: relative;
+    top: -3px;
+    z-index: 1;
+}
+
+.copyright{
+    margin-right: 2.5rem;
+    float: left;
+    margin-top: 5px;
+}
+
+.footer__legal__links{
+    position: relative;
+    top: -5px;
+    z-index: 1;
+    margin-right: 2.5rem;
+    float: left;
+    margin-top: 5px;
+    margin: 6px 0;
+}
+
+.footer__legal__links > a{
+    border-right: 1px solid #d6d6d6;
+    margin-right: 7px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    white-space: nowrap;    
+    color: #555;
+    font-size: inherit;
+    width: auto;
+    text-decoration: none;
+}
+
+.footer__legal__links > a:hover{
+    text-decoration: underline;
+}
+
+.footer > a{
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.plus__sign{
+    display: none;
+}
+
+.footer__input{
+   display: none;
+}
+
+@media only screen and (max-width:765px){
+    .footer__input{
+        display: block;
+    }
+
+    .footer .menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        visibility: visible;
+        backface-visibility: hidden;
+    }
+
+    .main{
+        padding: 0!important;
+    }
+
+    .menu .main__heading{
+        position: relative;
+        border-bottom: 1px solid silver;
+        min-height: 35px;
+        padding-top: .5rem;
+    }
+
+    .menu .main{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .main__heading{
+        color: #555;
+        font-weight: 400;
+    }
+
+    ul.menu li{
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    ul.menu li a{
+        font-size: .7rem;
+
+    }
+
+    .menu li .footer__input{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    ul li ul li{
+        border-style: none;
+    }
+
+    .submenu{
+        transition: all .6s;
+        max-height: 0;
+        opacity: 0;
+    }
+
+    .submenu li a{
+        font-size: .6rem;
+    }
+
+    .menu li .footer__input:checked ~ ul{
+        max-height: 1000px;
+        opacity: 1;
+    }
+
+    .last__area{
+        margin-top: 10px;
+    }
+
+    .footer .country{
+        display: none;
+    }
+
+    .plus__sign{
+        display: block;
+        float: right;
+        font-size: .8rem;
+        transition: all .2s;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .menu li .footer__input:checked ~ .plus__sign{
+        transform: rotate(45deg);
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        margin: auto 0;
+    }
+
+    .footer__legal__links{
+        margin: 6px 0;
+        font-size: .7rem;
+        margin-left: 5px;
+   }
+
+    .footer__legal__links > a{
+        margin-top: 0;
+    }
+
+    .mt-15per{
+        top: 15%;
+    }
+}
+
+/* -------------------------------------------Footer CSS Ends Here ----------------------------------------------------------*/

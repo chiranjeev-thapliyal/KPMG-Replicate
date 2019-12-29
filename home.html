@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css" type="text/css">
+</head>  
+<body>  
+    <div class="container">
+        
+    <!-- Navigation Starts Here -->  
+        <div class="navigation">   
+                <i class="log far fa-user"></i>
+                <i class="log fas fa-search"></i>
+                <i class="log fas fa-globe-americas"></i>
+            <!-- hamburger menu starting -->
+                <input id="dropdown" class="mobile__view" type="checkbox" style="display:none;">
+                <label for="dropdown" class="hamburger">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </label>
+                <div class="mega__menu">
+                <img class="nav__logo" src="./img/kpmg-logo.jpg" alt="logo" srcset="">
+                <ul class="mobile__menu"> 
+                    <li><a href="" class="" id="">Insights</a>
+                        <label for="show__ul1" class="has-children">
+                            <i class="fas fa-sort-down"></i>
+                        </label>
+                        <input type="checkbox" id="show__ul1" class="show__ul show__ul1">
+                        <ul class="drop1">   
+                            <li><a href="./pages/digital-transformation.html">Digital Transformation</a></li>
+                            <li><a href="#">Geopolitics</a></li>
+                            <li><a href="#">Customer Insights</a></li>
+                            <li><a href="#">Data Driven Technologies</a></li>
+                            <li><a href="#">Cyber Security</a></li>
+                            <li class="nav__btn"><i class="nav__btn--icon fas fa-chevron-right"></i><a href="#" class="nav__btn--link">All Insights</a></li> 
+                            <div id="nav__post">
+                                <div  class="card card-1 nav__post--1">
+                                    <img src="./img/post1.jpg" alt="post" srcset="">
+                                    <h2 class="card__heading">Managing Brexit</h2>
+                                    <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                                <div  class="card card-1 nav__post--2">
+                                        <img src="./img/post1.jpg" alt="post" srcset="">
+                                        <h2 class="card__heading">Managing Brexit</h2>
+                                        <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                            </div>
+                        </ul>
+                        </li>
+                    <li><a href="#" class="" id="">Industries</a>
+                        <label for="show__ul2" class="has-children">
+                                <i class="fas fa-sort-down"></i>
+                            </label>
+                            <input type="checkbox" id="show__ul2" class="show__ul show__ul2">
+                            <ul class="drop2">   
+                            <li><a href="#">Financial Services</a></li>
+                            <li><a href="#">Consumer And Retail</a></li>
+                            <li><a href="#">Industrial Manufacturing</a></li>
+                            <li><a href="#">Energy And Natural Resources</a></li>
+                            <li><a href="#">Infrastructure, Government, Health and Life Sciences</a></li>
+                            <li class="nav__btn"><i class="nav__btn--icon fas fa-chevron-right"></i><a href="#" class="nav__btn--link">All Industries</a></li> 
+                            <div id="nav__post">
+                                    <div  class="card card-1 nav__post--1">
+                                        <img src="./img/post1.jpg" alt="post" srcset="">
+                                        <h2 class="card__heading">Managing Brexit</h2>
+                                        <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                    </div>
+                                    <div  class="card card-1 nav__post--2">
+                                            <img src="./img/post1.jpg" alt="post" srcset="">
+                                            <h2 class="card__heading">Managing Brexit</h2>
+                                            <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                    </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="" id="">Services</a>
+                        <label for="show__ul3" class="has-children">
+                                <i class="fas fa-sort-down"></i>
+                            </label>
+                            <input type="checkbox" id="show__ul3" class="show__ul show__ul3">
+                        <ul class="drop3">   
+                            <li><a href="#">Audit And Assurance</a></li>
+                            <li><a href="#">Tax And Legal</a></li>
+                            <li><a href="#">Advisory</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li class="nav__btn"><i class="nav__btn--icon fas fa-chevron-right"></i><a href="#" class="nav__btn--link">All Services</a></li> 
+                            <div id="nav__post">
+                                <div  class="card card-1 nav__post--1">
+                                    <img src="./img/post1.jpg" alt="post" srcset="">
+                                    <h2 class="card__heading">Managing Brexit</h2>
+                                    <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                                <div  class="card card-1 nav__post--2">
+                                        <img src="./img/post1.jpg" alt="post" srcset="">
+                                        <h2 class="card__heading">Managing Brexit</h2>
+                                        <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="" id="">Client Stores</a>
+                        <label for="show__ul4" class="has-children">
+                                <i class="fas fa-sort-down"></i>
+                        </label>
+                            <input type="checkbox" id="show__ul4" class="show__ul show__ul4">
+                            <ul class="drop4">   
+                            <li><a href="#">Digital Transformation</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Talent And Change</a></li>
+                            <li><a href="#">Business Protection</a></li>
+                            <li><a href="#">Customer Experience</a></li>
+                            <li class="nav__btn"><i class="nav__btn--icon fas fa-chevron-right"></i><a href="#" class="nav__btn--link">All Client Stories</a></li> 
+                            <div id="nav__post">
+                                <div  class="card card-1 nav__post--1">
+                                    <img src="./img/post1.jpg" alt="post" srcset="">
+                                    <h2 class="card__heading">Managing Brexit</h2>
+                                    <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                                <div  class="card card-1 nav__post--2">
+                                        <img src="./img/post1.jpg" alt="post" srcset="">
+                                        <h2 class="card__heading">Managing Brexit</h2>
+                                        <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="" id="">Careers</a>
+                        <label for="show__ul5" class="has-children">
+                                <i class="fas fa-sort-down"></i>
+                            </label>
+                            <input type="checkbox" id="show__ul5" class="show__ul show__ul5">
+                            <ul class="drop5">   
+                            <li><a href="#">Job Search</a></li>
+                            <li><a href="#">Experienced Hires</a></li>
+                            <li><a href="#">Graduates</a></li>
+                            <li><a href="#">Life At KPMG</a></li>
+                            <li class="nav__btn"><i class="nav__btn--icon fas fa-chevron-right"></i><a href="#" class="nav__btn--link">All Careers</a></li> 
+                            <div id="nav__post">
+                                <div  class="card card-1 nav__post--1">
+                                    <img src="./img/post1.jpg" alt="post" srcset="">
+                                    <h2 class="card__heading">Managing Brexit</h2>
+                                    <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                                <div  class="card card-1 nav__post--2">
+                                        <img src="./img/post1.jpg" alt="post" srcset="">
+                                        <h2 class="card__heading">Managing Brexit</h2>
+                                        <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="" id="">About Us</a>
+                        <label for="show__ul6" class="has-children">
+                                <i class="fas fa-sort-down"></i>
+                            </label>
+                            <input type="checkbox" id="show__ul6" class="show__ul show__ul6">
+                            <ul class="drop6">  
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">What We Stand For</a></li>
+                                <li><a href="#">Our role in the World</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Alliances</a></li>
+                                <li><a href="#">KPMG Blogs</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- Navigation Ends Here -->
+
+    <!-- Header Area Starts Here -->
+
+        <header class="header" id="header">
+            <div class="content">
+                <h1 class="main__content">Carikture</h1>
+                <a>Quaterly global reports published by Carikture Company</a>
+            </div>
+        </header>
+        
+        <!-- Header Area Ends Here -->
+
+        <!-- Section Main Starts Here -->
+        <section class="main" id="main">
+            <div class="card card-1" id="managing-brexit">
+                <img src="./img/post1.jpg" alt="post" srcset="">
+                <h2 class="card__heading">Managing Brexit</h2>
+                <p class="card__content">KMPG is here to work with you as British business enters new era.</p>
+            </div>
+
+            <div class="card card-2" id="frontiers-in-finance">
+                <img src="./img/post2.jpg" alt="post" srcset="">
+                <h2 class="card__heading">Frontiers in Finance - March 2019</h2>
+                <p class="card__content">How financial institutions can capitalize on today's risk and regulatory landscape for long-term success.</p>
+            </div>
+
+            <div id="special" class="card card-3">
+                <h2  class="card__heading">Save, Curate and Share</h2>
+                <p class="card__content">Save what resonates, curate a library of information, and share content with your network of contacts.</p>
+            </div>
+
+            <div class="card card-4" id="cyber-concern">
+                <img src="./img/post4.jpg" alt="post" srcset=""> 
+                <h2  class="card__heading">Cyber concern to cyber confidence</h2>
+                <p class="card__content">An organization putting consumer's security front and center of their digital products?</p>
+            </div>
+
+            <div class="card card-5">
+                <img src="./img/post5.jpg" alt="post" srcset="">
+                <h2  class="card__heading">Consumer and retail M&A trends 2019</h2>
+                <p class="card__content">The race for game-changing transformation and strategic growth.</p>
+            </div>
+
+            <div class="card card-6">
+                <img src="./img/post6.jpg" alt="post" srcset="">
+                <h2  class="card__heading">Consumer and retail M&A trends 2019</h2>
+                <p class="card__content">The race for game-changing transformation and strategic growth.</p>
+            </div>
+
+            <div class="card card-7">
+                <img src="./img/post7.jpg" alt="post" srcset="">
+                <h2  class="card__heading">Consumer and retail M&A trends 2019</h2>
+                <p class="card__content">The race for game-changing transformation and strategic growth.</p>
+            </div>
+
+            <div class="card card-8">
+                <img src="./img/post8.jpg" alt="post" srcset="">
+                <h2 class="card__heading">Inclusive Voices</h2>
+                <p class="card__content">Watch Inclusive Voices which brings together world leaders, celebrities and change-makers to share opinions on what could and should be done to secure inclusion and equality for all by 2030.</p>
+            </div>
+
+            <div class="card card-9" id="KMPG-blog">
+                <img src="./img/post9.jpg" alt="post" srcset="">
+                <h2 class="card__heading">KPMG Blog</h2>
+                <p class="card__content">Viewpoints from KPMG leaders and subject matter experts from around the world.</p>
+            </div>
+
+        </section>
+        <!-- Section Main Starts Here -->
+
+        <!-- Footer Area Starts Here -->
+        
+        <footer class="footer" id="footer">
+            <div class="footer__content">
+                <ul class="message">
+                    <li>
+                        *New subscribers only. Plan automatically renews with subscription charges after trial.
+                    </li>
+                </ul>
+     
+                <ul class="menu">
+                    <li class="main main__heading">
+                        <input type="checkbox" name="" class="footer__input">
+                          Explore<i class="plus__sign fas fa-plus"></i>
+                        <ul class="submenu">
+                        <li><a href="#">Mac</a></li> 
+                        <li><a href="#">iPad</a></li> 
+                        <li><a href="#">iPhone</a></li> 
+                        <li><a href="#">Watch</a></li> 
+                        <li><a href="#">TV</a></li> 
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">iTunes</a></li>
+                        <li><a href="#">iPod Touch</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="main main__heading">
+                        <input type="checkbox" name="" class="footer__input">
+                        Apple Programs<i class="plus__sign fas fa-plus"></i>
+                        <ul class="submenu">
+                            <li><a href="#">Recycling</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="main">
+                        <ul>
+                            <li class="main__heading"> 
+                                <input type="checkbox" name="" class="footer__input"> 
+                                For Education<i class="plus__sign fas fa-plus"></i>
+                                <ul class="submenu">
+                                    <li><a href="#">Apple and Education</a></li>
+                                </ul>
+                            </li>
+                            <li class="main__heading"> 
+                                <input type="checkbox" name="" class="footer__input">
+                                For Business<i class="plus__sign fas fa-plus mt-15per"></i>
+                                <ul class="submenu">
+                                    <li><a href="#">Apple and Business</a></li>
+                                </ul>
+                            </li>
+                            <li class="main__heading"> 
+                                <input type="checkbox" name="" class="footer__input">
+                                For Healthcare<i class="plus__sign fas fa-plus mt-15per"></i>
+                                <ul class="submenu">
+                                <li><a href="#">Apple and Healthcare</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> 
+    
+                    <li class="main">
+                            <ul>
+                                <li class="main main__heading"> 
+                                    <input type="checkbox" name="" class="footer__input">
+                                    Apple Values<i class="plus__sign fas fa-plus"></i>
+                                    <ul class="submenu">
+                                        <li><a href="#">Accessibility</a></li>
+                                        <li><a href="#">Environment</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Supplier Responsibility</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main main__heading"> 
+                                    <input type="checkbox" name="" class="footer__input">
+                                    Account<i class="plus__sign fas fa-plus"></i>
+                                    <ul class="submenu">
+                                        <li><a href="#">Manage Your Apple ID</a></li>
+                                        <li><a href="#">iCloud.com</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> 
+    
+                    <li class="main main__heading">
+                        <input type="checkbox" name="" class="footer__input">
+                        About Apple <i class="plus__sign fas fa-plus"></i> 
+                        <ul class="submenu">
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Apple Leadership</a></li>
+                            <li><a href="#">Job Oppurtunities</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact Apple</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <ul class="last__area">
+                    <li>Where to buy: <a href="#" class="location"> find a retailer.</a></li>
+                    <li>
+                        <div class="country">
+                            <a href="#"><span class="country__flag"></span>India</a>
+                        </div>
+                        <div class="footer__legal">
+                            <div class="copyright">
+                                Copyright © 2019 Apple Inc. All rights reserved.
+                            </div>
+                            <div class="footer__legal__links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms Of Use</a>
+                                <a href="#">Legal</a>
+                                <a href="#">Site Map</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer Area Ends Here -->
+    </div>
+    </div>
+
+    <script src="./javascript/app.js"></script>
+
+</body>
+</html>
